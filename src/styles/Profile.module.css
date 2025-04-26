@@ -1,0 +1,139 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .main {
+    width: 100%;
+    max-width: 900px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .main:hover {
+    transform: scale(1.02);
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .userInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    transition: all 0.3s ease;
+  }
+  
+  .profileSection {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profileIcon {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .profileIcon:hover {
+    transform: scale(1.1);
+  }
+  
+  .profileDetails {
+    color: var(--foreground);
+  }
+  
+  .userName {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--primary-color);
+  }
+  
+  .userDetail {
+    font-size: 1rem;
+    margin: 6px 0;
+    color: var(--secondary-color);
+  }
+  
+  .uploadSection {
+    background-color: #f9fafb;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px dashed var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .subtitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--foreground);
+  }
+  
+  .uploadInput {
+    font-size: 1rem;
+    padding: 12px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .uploadInput:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 8px rgba(33, 51, 238, 0.4);
+  }
+  
+  .uploadInput:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 8px rgba(33, 51, 238, 0.6);
+  }
+  
+  @media (max-width: 768px) {
+    .main {
+      padding: 20px;
+    }
+  
+    .userInfo {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profileSection {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profileIcon {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  
+    .uploadInput {
+      max-width: 100%;
+    }
+  }
+  
